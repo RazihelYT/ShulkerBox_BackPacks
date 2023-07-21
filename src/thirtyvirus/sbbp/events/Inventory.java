@@ -78,9 +78,11 @@ public class Inventory implements Listener {
         if (Version.getVersion().isBiggerThan(Version.v1_13)) {
             if (!event.getView().getTitle().contains("Holding:")) return;
         }
-        else {
-            if (!event.getInventory().getName().contains("Holding:")) return;
-        }
+
+        //Deprecate this method for testings (7-20-2023 21:34)
+        //else {
+            //if (!event.getInventory().getName().contains("Holding:")) return;
+        //}
 
         Player player = (Player) event.getPlayer();
 
